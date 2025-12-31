@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -15,9 +16,21 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition">Tools</a></li>
-              <li><a href="#" className="hover:text-white transition">Prompts</a></li>
-              <li><a href="#" className="hover:text-white transition">Resources</a></li>
+              <li>
+                <Link to="/tools" className="hover:text-white transition">
+                  Tools
+                </Link>
+              </li>
+              <li>
+                <Link to="/prompts" className="hover:text-white transition">
+                  Prompts
+                </Link>
+              </li>
+              <li>
+                <Link to="/resources" className="hover:text-white transition">
+                  Resources
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -25,9 +38,21 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition">About</a></li>
-              <li><a href="#" className="hover:text-white transition">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition">Contact</a></li>
+              <li>
+                <a href="#about" className="hover:text-white transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#blog" className="hover:text-white transition">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-white transition">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -35,8 +60,16 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition">Privacy</a></li>
-              <li><a href="#" className="hover:text-white transition">Terms</a></li>
+              <li>
+                <a href="#privacy" className="hover:text-white transition">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="#terms" className="hover:text-white transition">
+                  Terms
+                </a>
+              </li>
             </ul>
           </div>
         </div>
